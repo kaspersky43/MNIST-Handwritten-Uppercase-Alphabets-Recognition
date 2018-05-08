@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def get_data(limit=None):
     print("Reading the data")
-    df = pd.read_csv('./input/handwritten_data.csv')
+    df = pd.read_csv('./input/handwritten_data_785.csv')
     data = df.as_matrix()
     np.random.shuffle(data)
     X = data[:, 1:] / 255.0 
